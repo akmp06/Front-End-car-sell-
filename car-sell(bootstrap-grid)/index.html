@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Manrope',sans-serif;
+        }
+        body{
+            padding: 40px;
+            background-color: rgba(20, 20, 20, 1);
+        }
+        .hero{
+            
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+            height: 681px;
+            background: url(./pic/Background.png) no-repeat center center fixed #000; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            color: blue;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .intro{
+            color: white;
+        }
+        .big-b{
+            width: 524px;
+            text-align: left;
+            font-size: 56px;
+            font-weight: 600;
+        }
+        .car-price{
+            padding: 15px;
+            
+        }
+        .box1{
+            background-color: rgba(30, 30, 30, 1);
+            color: rgba(255, 255, 255, 1);
+            height: 240px;
+            background-image: url(./pic/carp1.png),url(./pic/Frame1.png);
+            background-repeat: no-repeat no-repeat;
+            background-position: right bottom, 89% 17%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border-radius: 32px;
+        }
+        .box2{
+            background-color: rgba(30, 30, 30, 1);
+            color: rgba(255, 255, 255, 1);
+            height: 240px;
+            background-image: url(./pic/carp2.png);
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border-radius: 32px;
+
+            
+        }
+        .box3{
+            background-color: rgba(30, 30, 30, 1);
+            color: rgba(255, 255, 255, 1);
+            height: 240px;
+            background-image: url(./pic/carp3.png),url(./pic/Frame1.png);
+            background-repeat: no-repeat,no-repeat;
+            background-position: right bottom, 89% 17%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border-radius: 32px;
+
+        }
+        .box4{
+            background-color: rgba(30, 30, 30, 1);
+            color: rgba(255, 255, 255, 1);
+            height: 240px;
+            background-image: url(./pic/carp4.png),url(./pic/Frame1.png);
+            background-repeat: no-repeat,no-repeat;
+            background-position: right bottom, 89% 17%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border-radius: 32px;
+
+            
+        }
+        .box5{
+            background-color: rgba(255, 0, 29, 1);
+            color: rgba(255, 255, 255, 1);
+            height: 240px;
+            background-image: url(./pic/carp5.png),url(./pic/Frame2.png);
+            background-repeat: no-repeat,no-repeat;
+            background-position: right bottom, 89% 17%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border-radius: 32px;
+            
+        }
+        .box6{
+            background-color: rgba(30, 30, 30, 1);
+            color: rgba(255, 255, 255, 1);
+            height: 240px;
+            background-image: url(./pic/carp6.png);
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border-radius: 32px;
+
+        }
+        .box{
+            background-color: white;
+            color: magenta;
+        }
+        
+        .car-detail{
+            width: 100%;
+            background-color: rgba(255, 255, 255, 1);
+            color: black;
+            border-radius: 32px;
+            padding: 50px;
+        }
+        .w-box{
+            
+            width: 100%;
+            height: 61px;
+            gap: 15px;
+        }
+        .car-chanell{
+            padding: 24px;
+            background-color:rgba(245, 245, 245, 1) ;
+            border-radius: 32px;
+            align-items: center;
+        }
+        button{
+            border: none;
+            background-color: rgba(255, 255, 255, 1);
+            padding: 24px, 48px, 24px, 48px;
+            border-radius: 16px;
+            height: 61px;
+            gap: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .service{
+            background-color: rgba(255, 0, 29, 1);
+            color: white;
+            padding: 50px;
+            border-radius: 32px;
+            position: relative;
+            top: 15px;
+        }
+        .w-button{
+            background-color: white;
+            height: 61px;
+            font-weight: 600;
+            border-radius: 16px;
+            color: rgba(20, 20, 20, 1);
+            padding: 24px, 48px, 24px, 48px;
+
+            
+        }
+        .r-button{
+            background-color: rgba(255, 0, 29, 1);
+            color: white;
+            padding: 24px, 48px, 24px, 48px;
+            border: 1px solid white;
+            height: 61px;
+            border-radius: 16px;
+            position: relative;
+            left: 1%;
+        }
+        .r2-button{
+            background-color: rgba(255, 0, 29, 1);
+            color: white;
+            padding: 24px, 48px, 24px, 48px;
+            
+            height: 61px;
+            border-radius: 16px;
+            position: relative;
+            left: 1%;
+        }
+        .b-button{
+            background-color: transparent;
+            color: white;
+            padding: 24px, 48px, 24px, 48px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            height: 61px;
+            border-radius: 16px;
+            position: relative;
+            left: 2.5%;
+        }
+        nav{
+            position: relative;
+            bottom: 17%;
+        }
+        .menu{
+            width: 111px;
+            height: 42px;
+            border-radius: 8px;
+            gap:8px;
+            padding: 15px, 16px, 15px, 16px;
+            color:white ;
+            background-color: rgba(255, 0, 29, 1);
+        }
+        .ff{
+            width: 350px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar {
+      border-bottom: 1px solid rgba(40, 40, 40, 1);
+      padding-bottom: 35px;
+      
+        }
+        .navbar-dark, .navbar[data-bs-theme=dark] {
+            --bs-navbar-color: rgba(255, 255, 255, 1);
+        }
+        .cn{
+            font-size: 24px;
+            width: 48%;
+        }
+        .cn1{
+            font-size: 24px;
+            width: 66%;
+        }
+        
+        .car{
+            width: 100%;
+        }
+        .np{
+            font-weight:500 ;
+            font-size: 18px;
+            color: rgba(40, 40, 40, 1);
+        }
+        .np2{
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .ap{
+            font-weight: 600;
+            font-size: 18px;
+        }
+        .ap2{
+            font-weight: 600;
+            font-size: 16px;
+        }
+        h2{
+            font-size: 56px;
+            font-weight: 600;
+        }
+        .sp{
+            font-size: 24px;
+            font-weight: 500;
+        }
+        .sp2{
+            font-weight: 800;
+            font-size: 18px;
+        }
+       .sp3{
+        font-weight: 400;
+            font-size: 16px;
+       }
+       .crd{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       }
+       .arrow{
+        position: relative;
+        left: 21%;
+       }
+    </style>
+
+</head>
+<body>
+           <div class="hero container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+                <a class="navbar-brand" href="#">
+                    <div class="ff">
+                    <img src="./pic/Logotype.png" alt="">
+                    <div class="menu">
+                        <img src="./pic/Union.png" alt=""><span>Услуги</span>
+                    </div>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Работы <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Акции</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Акции</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">+7 495 207-75-70</a>
+                      </li>
+                  </ul>
+                </div>
+              </nav>
+                <div class="row">
+                        <div class="intro col-12 col-md-6 col-xl-6">
+                            <h1>Премиальное обслуживание
+                                вашего автомобиля</h1>
+                                <div class="row gy-3">
+                                    
+                                    <button class="r2-button p-3 col-12 col-md-6 col-xl-6">Запись в сервис >
+                                    </button>
+                                    
+                                    <button class="b-button p-3 col-12 col-md-6 col-xl-6"> <img src="./pic/Messages, Chat.png" alt=""> Консультация</button>
+                                </div>
+                        </div>
+                </div>  
+            </div>
+
+                <div class="car-price container overflow-hidden">
+                    <div class=" row gy-3">
+                        <div class="col-12 col-md-6 col-xl-4 ">
+                            <div class="box1 p-3">
+                            <span class="cn">Обклейка автопленкой</span>
+                            <span>от<span class="cn"> 32 000 ₽</span>
+                        </div>
+                        </div>
+                        <div class=" col-12 col-md-6 col-xl-4">
+                            <div class="box2 p-3">
+                            <p class="cn">Слесарный
+                                ремонт</p>
+                            <span>от<span class="cn"> 2 999 ₽</span>
+                        </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="box3 p-3">
+                            <p class="cn">Покраска
+                                дисков</p>
+                            <span>от<span class="cn"> 4 000 ₽</span>
+                        </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="box4 p-3">
+                            <p class="cn1">Тюнинг выхлопной системы</p>
+                            <span>от<span class="cn"> 32 000 ₽</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="box5 p-3">
+                            <p class="cn">Кузовной
+                                ремонт</p>
+                            <span>от<span class="cn"> 32 000 ₽</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="box6 p-3">
+                            <p class="cn">Мойка
+                                автомобиля</p>
+                            <span>от<span class="cn"> 990 ₽</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="car-detail container overflow-hidden">
+                <div class="crd row gy-3">
+                    <div class="big-b col-12 col-md-6 col-xl-4 p-3">
+                        <p>Избранные работы</p>
+                    </div>
+                    <div class="arrow col-12 col-md-6 col-xl-4 p-3">
+                        <img src="./pic/Arrows.png" alt="">
+                    </div>
+                </div>
+                <div class="car-scrol row gy-3">
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="car p-3">
+                        <img src="./pic/Rectangle1.png" alt="">
+                        <p class="np">Бронирование автомобиля
+                            пленкой Illumar</p>
+                            <p class="np2">Подробнее об услуге ></p>
+                        </div>
+                    </div>
+                    <div class=" col-12 col-md-6 col-xl-3">
+                        <div class="car p-3">
+                        <img src="./pic/Rectangle2.png" alt="">
+                        <p class="np">Тюнинг выхлопной системы
+                            на Porsche GT</p>
+                            <p class="np2">Подробнее об услуге     ></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="car p-3">
+                        <img src="./pic/Rectangle3.png" alt="">
+                        <p class="np">Техническое обслуживание
+                            Chevrolet Camaro</p>
+                            <p class="np2">Подробнее об услуге     ></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="car p-3">
+                        <img src="./pic/Rectangle4.png" alt="">
+                        <p class="np">Детейлинг-мойка с глубокой
+                            химчисткой салона</p>
+                            <p class="np2">Подробнее об услуге     ></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-chanell row gy-3">
+                    <div class="name col-12 col-md-12 col-xl-2 p-3">
+                        <p class="ap">Присоединяйтесь к нам в социальных сетях:</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 p-1">
+                        <button class="w-box p-3">
+                            <img src="./pic/icon1.png" alt="">
+                            <p class="ap2">ВКонтакте</p>
+                        </button>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <button class="w-box p-3">
+                            <img src="./pic/icon2.png" alt="">
+                            <p class="ap2">Instagram</p>
+                        </button>
+                    </div>
+                    <div class="col-12 col-md-12 col-xl-3">
+                        <button class="w-box p-3">
+                            <img src="./pic/icon3.png" alt="">
+                            <p class="ap2">YouTube</p>
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="service container">
+                <div class="row gy-3">
+                    <div class="about col-12 col-md-6 col-xl-6">
+                        <h2>Почему UCT?</h2>
+                        <p class="sp">UCT — это гарантия не только качества, но и стиля! Доверь свой автомобиль профессионалам!</p>
+                            <div class="bt row gy-3">
+                                <button class="w-button col-12 col-md-6 col-xl-3 p-3">
+                                    <p>Запись в сервис</p>
+                                </button>
+                                <button class="r-button col-12 col-md-6 col-xl-3 p-3">
+                                    <p>Консультация</p>
+                                </button>
+                            </div>
+                    </div>
+                    <div class="k-box col-12 col-md-6 col-xl-6">
+                       <div class="row gy-3"> 
+                    <div class="l-box col-12 col-md-6 col-xl-6 p-3">
+                        <img src="./pic/car-wash1.png" alt="" class="ll">
+                        <p class="sp2">ОБОРУДОВАНИЕ</p>
+                        <p class="sp3">Автомойка на 2 поста и лучшее итальянское оборудование</p>
+                    </div>
+                    <div class="l-box col-12 col-md-6 col-xl-6 p-3">
+                        <img src="./pic/lift2.png" alt="">
+                        <p class="sp2">ПОДЪЕМНИКИ</p>
+                        <p class="sp3">Рассчитаны на 3,5 и 5 тонн. Поднимем любую машину!</p>
+                    </div>
+                       </div>
+                       <div class="row gy-3">
+                        <div class="l-box col-12 col-md-6 col-xl-6 p-3">
+                            <img src="./pic/target4.png" alt="">
+                            <p class="sp2">ЦЕНЫ</p>
+                            <p class="sp3">Лучшие цены и качество на рынке. Довольным будет каждый!</p>
+                        </div>
+                        <div class="l-box col-12 col-md-6 col-xl-6 p-3">
+                            <img src="./pic/spray-paint-gun3.png" alt="">
+                            <p class="sp2">ПОКРАСКА</p>
+                            <p class="sp3">Покрасочная камера Spanesi и магнитный стапель.</p>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+            </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
+</html>
